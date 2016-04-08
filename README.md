@@ -37,13 +37,13 @@ Samen met alle gebruikers een tamagotchi verzorgen. Gebruikers kunnen de tamagot
 
 
 ####Views
-####*MVP:
+####MVP:
 * Homescreen met daar in:
   * de tamagotchi
   * geschiedenis van uitgevoerde acties op de tamagotchi
   * grafiek met de behoeften van de tamagotchi
   * lijst met uitvoerbare acties op de tamagotchi
-####*FF:
+####FF:
 * Homescreen toevoeginggen:
   * Tamagotchi wordt visueel weergegeven
   * chat
