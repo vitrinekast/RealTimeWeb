@@ -42,7 +42,8 @@ Samen met alle gebruikers een tamagotchi verzorgen. Gebruikers kunnen de tamagot
   * de tamagotchi
   * geschiedenis van uitgevoerde acties op de tamagotchi
   * grafiek met de behoeften van de tamagotchi
-  * lijst met uitvoerbare acties op de tamagotchi
+  * lijst met uitvoerbare acties op de tamagotchi.
+
 ####FF:
 * Homescreen toevoeginggen:
   * Tamagotchi wordt visueel weergegeven
