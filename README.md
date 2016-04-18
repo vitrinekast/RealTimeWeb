@@ -8,6 +8,7 @@ Een van de dingen die mij vooral opviel in de aanbevolen file structure van de o
 3. Files inside any lib/ directory are loaded next
 4. Files with deeper paths are loaded next
 5. Files are then loaded in alphabetical order of the entire path
+
 * client
 ....*De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
 * imports
