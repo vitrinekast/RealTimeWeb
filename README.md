@@ -1,5 +1,5 @@
 # RealTimeWeb
-##Week 1
+##Week 2
 ###Opdracht 1: File structuur
 Een van de dingen die mij vooral opviel in de aanbevolen file structure van de officiele Meteor Guide, is de map met ‘imports’. Dit oogt voor mij als een vrij chaotische map, aangezien 80% van de code zich hier bevindt. Na menig wat fora doorzocht te hebben bleek dat het sinds de 1.3 release toch belangrijk is van deze map gebruik te maken, zodat je controle houd over wat er geladen wordt en wanneer. Over het algemeen houd Meteor de volgende regels aan als het gaat over de volgorde van het inladen van bestanden :
 
@@ -9,14 +9,17 @@ Een van de dingen die mij vooral opviel in de aanbevolen file structure van de o
 4. Files with deeper paths are loaded next
 5. Files are then loaded in alphabetical order of the entire path
 
-* client
+* Client
 
-De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
-* imports
+...De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
+* Imports
+⋅⋅* Templates
 
-..* templates
+...De imports map is voornamelijk gevuld met de templates. Deze zijn onderverdeeld volgens de url. /adopt verwijst dus naar de adopt map, met hierin verschillende templates met hun javascript bestanden. De algemene template staat in de map template.
+* Public
+* Server
 
-De imports map is voornamelijk gevuld met de templates. Deze zijn onderverdeeld volgens de url. /adopt verwijst dus naar de adopt map, met hierin verschillende templates met hun javascript bestanden. De algemene template staat in de map template.
+
 
 ..* lib
 
