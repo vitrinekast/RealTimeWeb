@@ -9,6 +9,8 @@ Een van de dingen die mij vooral opviel in de aanbevolen file structure van de o
 4. Files with deeper paths are loaded next
 5. Files are then loaded in alphabetical order of the entire path
 
+####Huidige file structuur: 
+
 * Client
 
 De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
@@ -36,11 +38,11 @@ https://forums.meteor.com/t/meteor-1-3-imports-directory/19351/4
 ###Opdracht 2 - Mongo Collection
 Momenteel maak heb ik 3 collections aangemaakt. Daarnaast maak ik ook gebruik van de users collection van meteor zelf. 
 De 3 eigen collections zijn:
-*Needs
+* Needs
  dit zijn de needs van de gezamelijke tamagotchi. Deze gaat mogelijk nog veranderen.
-*History
+* History
  Dit is de historie van uitgevoerde acties op de gezamelijke tamagotchi. Het zou eventueel overzichtelijker zijn om deze samen te voegen met de Needs collection. 
-*Groups
+* Groups
  Deze collection bevat alle groups die zijn aangemaakt. Deze groups bevatten elke een array met objecten, met daarin informatie over de users die bij deze group horen. Ook heeft elke group zijn eigen tamagotchi.
 
 ####Bronnen:
@@ -51,6 +53,16 @@ De belangrijkste view is het startscherm, waar de gezamelijke tamagotchi zich be
 
 De needs van de tamagotchi zijn weergegeven met een meter, die langzaam leeg loopt. Zodra de meter leegloopt is de tamagotchi helaas overleden. 
 Ik heb geprobeerd dit met D3 weer te geven, maar heb uiteindelijk gebruik gemaakt van de HTML meter tag. Dit is semantisch correcter, en ook reactive. Daarnaast wordt het door de meeste browsers ondersteund, en geeft D3 veel meer problemen dan deze oplossing.
+
+###Opdracht 4 - De gebruiker kan een view manipuleren
+De gebruiker kan nu:
+* acties uitvoeren met de tamagotchi (reactive)
+* een group aanmaken
+* zich bij een group aansluiten
+* samen voor de persoonlijke tamagotchi zorgen.
+
+###opdracht 5 - logische polling
+Ik maak in deze applicatie gebruik van pubsub, en dus niet van polling. Wat wel nog een probleem kan opleveren is als gebruikers tegelijkertijd acties gaan uitvoeren op de tamagotchi. Dit zal nog getest moeten worden.
 
 ##Week 1
 ###Opdracht 3: Databron
