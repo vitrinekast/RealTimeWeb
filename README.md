@@ -12,8 +12,7 @@ Een van de dingen die mij vooral opviel in de aanbevolen file structure van de o
 ####Huidige file structuur: 
 
 * Client
-
-De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
+⋅⋅* De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
 * Imports
 **Templates**:De imports map is voornamelijk gevuld met de templates. Deze zijn onderverdeeld volgens de url. /adopt verwijst dus naar de adopt map, met hierin verschillende templates met hun javascript bestanden. De algemene template staat in de map template.
 
