@@ -11,27 +11,20 @@ Een van de dingen die mij vooral opviel in de aanbevolen file structure van de o
 
 * Client
 
-...De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
+De client map bevat alleen de main.js, hierin staan alle imports die op de client uitgevoerd moeten worden.
 * Imports
-⋅⋅* Templates
+**Templates**:De imports map is voornamelijk gevuld met de templates. Deze zijn onderverdeeld volgens de url. /adopt verwijst dus naar de adopt map, met hierin verschillende templates met hun javascript bestanden. De algemene template staat in de map template.
 
-...De imports map is voornamelijk gevuld met de templates. Deze zijn onderverdeeld volgens de url. /adopt verwijst dus naar de adopt map, met hierin verschillende templates met hun javascript bestanden. De algemene template staat in de map template.
+**Lib**:Hierin zit collections.js, waar ik collections aanmaak, exporteer en publiceer, helpers.js: hierin zitten helper functions die over de gehele applicatie gebruikt worden en de router.js
+
+**partials**:Hier plaats ik kleine stukjes templates die herhaaldelijk gebruikt worden.
+
 * Public
+
+Hierin staan publieke bestanden, zoals afbeeldingen en iconen.
 * Server
 
-
-
-..* lib
-
-....*Hierin zit collections.js, waar ik collections aanmaak, exporteer en publiceer.
-....*helpers.js: hierin zitten helper functions die over de gehele applicatie gebruikt worden.
-....*router.js: de router.
-..* partials
-....*Hier plaats ik kleine stukjes templates die herhaaldelijk gebruikt worden.
-* public
-..* Hierin staan publieke bestanden, zoals afbeeldingen en iconen.
-* server
-..*Op de server staat een main.js, die de collections importeert, zodat deze op de server aangemaakt worden
+*Op de server staat een main.js, die de collections importeert, zodat deze op de server aangemaakt worden
 
 ####Bronnen:
 http://joshowens.me/how-to-organize-your-meteor-js-app/
