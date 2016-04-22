@@ -1,0 +1,13 @@
+<template name='adopt'>
+	<section class="forms-wrapper-create">
+		<h2>adopt</h2>
+		<p>Creeer een nieuwe groep om hiermee een Tamagotchi te adopteren. Laat je vrienden op de door jou ingevoerde groepsnaam zoeken in 'join' om zich bij je te kunnen voegen.</p>
+	<form class="CreateGroup simpleForm" >
+		<label for="groupName">Groepsnaam:</label>
+		<!-- wat als de groepsnaam al bezet is -->
+		<input type="text" class='groupName' name='groupName' required>
+		<input type="submit" value='opslaan'>
+	</form>
+	<p class="message {{#if message_defined}}display_element{{/if}}">{{message}}</p>
+	</section>
+</template>

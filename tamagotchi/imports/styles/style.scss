@@ -1,0 +1,93 @@
+$orange: #D95B26;
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding:0 0;
+	margin:0 0;
+	
+	font-family: 'Montserrat', sans-serif;
+}
+.icon {
+	background-color:$orange;
+	padding:.8em;
+	border-radius:100%;
+	width:2em;
+	height:2em;
+	text-align:center;
+	
+	-webkit-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+	-moz-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+	box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+	img {
+		
+		height:100%;
+	}
+}
+
+
+.gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#caece7+0,d7e9d5+48,e8eac8+100 */
+	background: #caece7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #caece7 0%, #d7e9d5 48%, #e8eac8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #caece7 0%,#d7e9d5 48%,#e8eac8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #caece7 0%,#d7e9d5 48%,#e8eac8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caece7', endColorstr='#e8eac8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	// blurfiltertje?
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:-10;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(bg.svg) center center no-repeat;
+		background-size: cover;
+		opacity: .3; 
+		
+  }
+}
+
+
+// vaste waarden
+
+
+main {
+	margin:1.5em 2em;
+	box-sizing:border-box;
+}
+
+// media queries
+
+
+@media screen and (min-width: 650px) {
+	.home-wrapper {
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		
+		& > header {
+			flex:10 100%;
+			margin:0 1em;
+		}
+		
+		& > section {
+			flex:40%;
+			margin:0 1em;
+			
+			padding:.5em 1em;
+		}
+	}
+
+}
+
+

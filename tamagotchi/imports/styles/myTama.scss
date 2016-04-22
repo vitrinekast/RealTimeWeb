@@ -1,0 +1,66 @@
+$orange: #D95B26;
+
+.myTama-wrapper {
+	.niets {
+		text-align:center;
+	}
+	a.goto {
+		
+		background-color:#FBCAC1;
+		padding:.5em 1em;
+		border:none;
+		border-radius:3px;
+		font-size:1em;
+		color:white;
+		
+	
+	}
+	h2 {
+		text-align:center;
+		background:rgba(255,255,255,.4);
+		padding:.5em;
+		font-weight:lighter;
+		
+
+	}
+
+	ul {
+
+		display:flex;
+		flex-wrap:wrap;
+		list-style:none;
+		justify-content:center;
+		padding: 0 0;
+		
+		li {
+			flex-basis:30% 15em;
+			width:15em;
+			padding:1em .5em;
+			-webkit-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+			-moz-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+			box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+			background:rgba(255,255,255,.4);
+			height:15em;
+			display:inline-block;
+			float:left;
+			margin:.5em 1em;
+			
+			a {
+				text-align:center;
+				color:black;
+				text-decoration:none;
+				display:block;
+				
+				img {
+					max-height:12em;
+					max-width:12em;
+					padding:1em;
+					
+				}
+				span {
+					display:block;
+				}
+			}
+		}
+	}
+}

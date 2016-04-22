@@ -1,0 +1,24 @@
+<template name='tamaGroupDetail'>
+	<section class="groupDetail-wrapper">
+		{{#with group}}
+		<header>
+			<h2>{{groupName}}</h2>
+			<a class='remove'>Verlaten <img src="../../icons/cross.svg" alt=""></a>
+			<h3>members:</h3>
+			<ul>
+				{{#each members}}
+					<li>{{username}}</li>
+				{{/each}}
+			</ul>
+			
+		</header>
+
+	
+
+	{{/with}}
+
+	{{> partTamagotchi group}}
+	
+	{{> partChat group}}
+	</section>
+</template>

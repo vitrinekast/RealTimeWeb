@@ -1,0 +1,17 @@
+<template name="partHistory">
+	{{#if isAlive}}
+		<section class="history-wrapper">
+			<h2>history</h2>
+
+		
+				<ul>
+				{{#each history}}
+					<li>
+						<p>{{thing}} <span>{{fromnow time}}</span></p>
+					</li>
+				{{/each}}
+			</ul>
+
+	</section>
+	{{/if}}
+</template>

@@ -1,0 +1,25 @@
+<template name='join'>
+	<section class="forms-wrapper">
+		
+		<p>zoek hier onder in de lijst met groepen naar jou vrienden.</p>
+	<form class="joinGroup simpleForm">
+		<label for="">Zoeken:</label>
+		{{> EasySearch.Input index=groupsIndex }}
+		
+			<ul class='grouplist'>
+		{{#EasySearch.Each index=groupsIndex }}
+			<li>
+				<input type="radio" name='group' value='{{id}}' id='group-{{id}}'>
+				<label for="group-{{id}}">
+					
+					<img src="../{{status}}" alt="">
+					<h3>{{groupName}}</h3>
+				</label>
+			</li>
+		{{/EasySearch.Each}}
+			</ul>
+	<input type="submit" value='join deze groep'>
+	</form>
+	</section>
+</template>
+

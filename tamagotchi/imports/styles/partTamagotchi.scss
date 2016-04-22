@@ -1,0 +1,125 @@
+$orange: #D95B26;
+
+.tamaDead {
+	text-align:center;
+	img {
+		width:100px;
+		margin:1em auto;
+	};
+	button {
+		
+		background-color:#FBCAC1;
+		padding:.5em 1em;
+		border:none;
+		border-radius:3px;
+		font-size:1em;
+		color:white;
+		
+	}
+}
+.tamagotchi-wrapper {
+	
+	header {
+		
+		padding-top:1em;
+		text-align:center;
+		
+		.image-container {
+			
+			padding:0 0;
+			margin:auto;
+			width:200px;
+			height:200px;
+			position:relative;
+			img {
+				width:100%;
+				top:0;
+				left:0;
+				position:absolute;
+				animation: play .8s infinite ease-in-out;
+				
+
+			}
+		}
+		p {
+			background-color:#FBCAC1;
+			display:inline-block;
+			padding:.5em 1em;
+			color:white;
+			-webkit-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+			-moz-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+			box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+		}
+	}
+
+	ul {
+
+		list-style:none;
+		padding:0 0 ;
+		
+		li {
+			display:flex;
+			justify-content:space-around;
+			flex-wrap:nowrap;
+			margin:1em 0;
+			
+			
+			span {
+			flex-basis:10% 2.5em;
+			
+			margin: 0;
+			opacity:1;
+			z-index:999;
+				
+				
+			}
+			meter {
+				margin:.5em 0; 
+				flex:80%;
+				height:2.5em;
+				
+				-webkit-appearance: none; /* Reset appearance */
+				border: none;
+				border-radius: 3px;
+				-webkit-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+				-moz-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+				box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.45);
+				
+			  
+				&::-webkit-meter-bar {
+						background-color:white;
+						border-radius:3px;
+						opacity:.7;
+						border-radius: 3px;
+						background-image:
+							linear-gradient(
+							135deg,
+							transparent,
+							transparent 33%,
+							rgba(0, 0, 0, 0.1) 33%,
+							rgba(0, 0, 0, 0.1) 66%,
+							transparent 56%
+							);
+						background-size: 50px 5em;
+					  
+					
+				}
+				&::-webkit-meter-optimum-value {
+				background:$orange;
+				border-radius: 3px;
+				opacity:1;
+				
+				-webkit-transition: width .2s ease-in-out;
+				background-size: 100% 100%;
+				}
+			}
+
+		}
+	}
+}
+
+@keyframes play {
+	0% { top:0; }
+    50% { top:.2em; }
+    100% { top:0; }
+}

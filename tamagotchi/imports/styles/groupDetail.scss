@@ -1,0 +1,51 @@
+$orange: #D95B26;
+
+.groupDetail-wrapper {
+	background:rgba(255,255,255,.4);
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+
+	& > section {
+		flex:45%;
+		margin:0;
+	}
+
+	header {
+		position:relative;
+		padding:.5em;
+		flex:100%;
+
+		h2 {
+			text-align:center;
+			
+		}
+		a {
+			display:inline-block;
+			position:absolute;
+			top:1em;
+			right:1em;
+			color:lightgrey;
+			
+			img {
+				height:1.2em;
+				vertical-align:middle;
+			}
+		}
+		h3 {
+			
+		}
+		ul {
+			list-style:none;
+			padding:0 0;
+			li {
+				background-color:$orange;
+				color:white;
+				padding:.5em 1em;
+				display:inline-block;
+			}
+		}
+	}
+
+
+}

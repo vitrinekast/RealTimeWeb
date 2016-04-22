@@ -1,0 +1,82 @@
+/* line 3, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+nav {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  transition: height 0.2s ease-in-out; }
+  /* line 9, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+  nav a {
+    text-decoration: none;
+    display: block; }
+  /* line 13, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+  nav ul {
+    list-style: none;
+    padding: 0 0;
+    margin: 0; }
+
+/* line 21, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+.container-nav {
+  -ms-transform: translate(0, -100%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -100%);
+  /* Safari */
+  transform: translate(0, -100%); }
+
+/* line 27, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+.showMenu {
+  height: 100%;
+  transition: all 0.2s ease-in-out; }
+  /* line 35, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+  .showMenu .container-nav {
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important; }
+
+/* line 43, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+.menubutton {
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid white;
+  padding: 0.5em 1em;
+  display: inline-block;
+  font-weight: 500;
+  position: absolute;
+  bottom: -3.5em;
+  z-index: 999;
+  left: 0.5em;
+  transition: all 0.2s ease-in-out; }
+
+/* line 59, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+main {
+  padding-top: 3em; }
+
+/* line 65, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+nav .container-nav {
+  transition: all 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  padding: 1em; }
+/* line 71, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+nav #login-buttons {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  border: 3px solid white;
+  text-align: center;
+  background: #D95B26;
+  color: white;
+  margin: 0.5em auto;
+  max-width: 15em; }
+/* line 83, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+nav ul {
+  opacity: 1; }
+  /* line 86, /Users/Schuurmans/Desktop/oefenen_leren/meteor/tama3/imports/styles/nav.scss */
+  nav ul a {
+    padding: 0.5em;
+    border: 3px solid #D95B26;
+    text-align: center;
+    background: white;
+    color: #D95B26;
+    margin: 0.5em auto;
+    max-width: 15em;
+    box-shadow: -4px 10px 47px -7px rgba(0, 0, 0, 0.25); }

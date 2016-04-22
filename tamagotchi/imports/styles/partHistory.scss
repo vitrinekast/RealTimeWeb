@@ -1,0 +1,36 @@
+$orange: #D95B26;
+
+.history-wrapper {
+	background-color:white;
+	margin:2em 1em;
+
+	h2 {
+		padding:.5em;
+		text-align:center;
+		background-color:#FBCAC1;
+		margin: 0 0;
+	}
+	ul {
+
+			list-style:none;
+			padding:0 0;
+			margin: 0 0;
+			
+			li {
+				padding:.2em .5em ;
+				border-left: 8px solid $orange;
+				margin:.5em 0;
+
+				&:nth-of-type(odd) {
+					background-color:#ecf0f1;
+				}
+				p {
+					
+					span {
+						
+
+					}
+				}
+			}
+		}
+}

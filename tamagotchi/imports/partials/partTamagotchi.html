@@ -1,0 +1,37 @@
+<template name='partTamagotchi'>
+	<section class="tamagotchi-wrapper">
+	
+		{{#if isAlive}}
+		<header>
+			<div class="image-container">
+				<img class='tamaImg' src="../../{{status}}" alt="">
+			</div>
+			<p>Levend sinds: {{fromnow tamagotchi.aliveSince}}</p>
+		</header>
+		<section class="needs">
+		<ul>
+			{{#each needs}}
+				<li>
+					<span class='icon do'>
+						<img src="../icons/{{genre}}.svg" alt="">
+					</span>
+					<meter class='meter' value='{{diffTime this.endTime}}' low='180000' min='0' max='7200000'></meter>
+					
+				</li>
+			{{/each}}
+		</ul>
+		</section>
+		{{else}}
+		<section class="tamaDead">
+			<img src="sprites/dead.png" alt="">
+
+		<p>
+			Oh nee... het lijkt er op dat het jullie niet gelukt is om de tamagotchi in leven te houden. Druk hieronder om op nieuw te beginnen.
+		</p>
+		<button class='reset'>Opnieuw!</button>
+		</section>
+			
+		{{/if}}
+	</section>
+
+</template>

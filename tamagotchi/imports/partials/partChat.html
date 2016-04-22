@@ -1,0 +1,23 @@
+<template name='partChat'>
+
+	<section class="chat-wrapper">
+	<h2>chatten met de groep:</h2>
+		<section class="chat-inner-wrapper">
+			<ul>
+		{{#each chat}}
+			<li class={{getClass}}>
+				
+				<p>{{text}}</p>
+				<span>{{fromnow time}} {{user}}</span>
+
+			</li>
+		{{/each}}
+	</ul>
+	<form class='chatbox'>
+		<input type="text" name='text'>
+		<input type="submit">
+	</form>
+		</section>
+
+	</section>
+</template>

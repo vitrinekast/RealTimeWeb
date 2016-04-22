@@ -1,0 +1,155 @@
+$orange: #D95B26;
+
+nav {
+	position:relative;
+	width:100%;
+	height:0px;
+	transition:height .2s ease-in-out;
+	
+	a {
+			text-decoration:none;
+			display:block;
+	}
+	ul {
+		list-style:none;
+		padding:0 0;
+		margin:0;
+		
+	}
+
+}
+.container-nav {
+		-ms-transform: translate(0,-100%); /* IE 9 */
+		-webkit-transform: translate(0,-100%); /* Safari */
+		transform: translate(0,-100%);
+	}
+
+.showMenu {
+	height:100%;
+	
+	transition:all .2s ease-in-out;
+	
+	& ~ main {
+		
+	}
+	.container-nav {
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	
+}
+
+.menubutton {
+	 text-transform: uppercase;
+	 color:white;
+	 border:3px solid white;
+	 padding:.5em 1em;
+	 display:inline-block;
+	 font-weight:500;
+	 position:absolute;
+	 bottom:-3.5em;
+	 z-index:999;
+	 left:.5em;
+	 transition:all .2s ease-in-out;
+	 
+
+}
+
+	main {
+		padding-top:3em;
+	}
+    nav {	
+	
+	
+		.container-nav {
+			transition:all .2s ease-in-out;
+			background:rgba(255,255,255,.4);
+			margin:0;
+			padding:1em;
+		}
+		#login-buttons {
+			text-decoration:none;
+			display:block;
+			padding:.5em;
+			border:3px solid white;
+			text-align:center;
+			background:$orange;
+			color:white;
+			margin: .5em auto;
+			max-width:15em;
+		}
+
+		ul {
+			opacity:1;
+				
+			a {
+				padding:.5em;
+				border:3px solid $orange;
+				text-align:center;
+				background:white;
+				color:$orange;
+				margin: .5em auto;
+				max-width:15em;
+				
+				-webkit-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.25);
+				-moz-box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.25);
+				box-shadow: -4px 10px 47px -7px rgba(0,0,0,0.25);
+			}
+		}
+
+
+	}
+
+// @media screen and (min-width: 650px) {
+//     nav {	
+//     	padding:0;
+//     	background-color:$orange;
+		
+// 		a {
+// 			text-decoration:none;
+// 		}
+	
+// 	#login-buttons {
+// 		display:inline-block;
+// 		float:right;
+// 		background-color:white;
+// 		margin:.5em;
+// 		margin-top:calc(.5em + 7px);
+// 		padding:.5em;
+// 		border-radius:3px;
+		
+// 		a {
+// 			text-decoration:none;
+// 		}
+// 		.accounts-dialog {
+// 			right:0 !important;
+// 			left:auto;
+			
+// 		}
+// 	}
+	
+// 	ul {
+// 		opacity:1;
+// 		display:inline-block;
+// 		li {
+// 			display:inline-block;
+// 			a {
+// 				padding:1em;
+// 				color:white;
+// 				border-top:7px solid $orange;
+// 				transition:border .2s ease-in-out;
+				
+// 				&:hover {
+// 					border-top:7px solid white;
+// 				}
+// 			}
+// 		}
+// 	}
+
+
+// }
+//     .hidden {
+//     	display:none;
+//     }
+// }

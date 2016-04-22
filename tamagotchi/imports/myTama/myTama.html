@@ -1,0 +1,29 @@
+<template name='myTama'>
+	<section class="myTama-wrapper">
+		<h2>Mijn gedeelde Tamagotchi's:</h2>
+	{{#if result}}
+		<ul>
+		{{#each Groups}}
+			<li>
+				<a href="/myTama/{{_id}}">
+					<span>{{groupName}}</span>
+					<span>{{timeDiff}}</span>
+					<img src="{{status}}" alt="">
+				</a>
+			</li>
+	
+		{{/each}}
+		</ul>
+	{{else}}
+	
+	<section class="niets">
+		<p>Oh jee....Het lijkt er op dat je nog geen gedeelde Tamagotchi hebt.
+	Maar er snel eentje aan!</p>
+	<a href="/adopt" class='goto'>Adopt your own</a>
+	</section>
+	{{/if}}
+
+	</section>
+
+	
+</template>
